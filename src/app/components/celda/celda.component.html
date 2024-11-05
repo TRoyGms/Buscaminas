@@ -1,0 +1,8 @@
+<div class="celda" [ngClass]="{ 'descubierto': celda.descubierto, 'mina': celda.mina, 'marcada': celda.marcado }">
+    <span *ngIf="celda.descubierto && !celda.mina">
+      {{ celda.minasAlrededor > 0 ? celda.minasAlrededor : '' }}
+    </span>
+    <span *ngIf="celda.descubierto && celda.mina">💣</span>
+    <span *ngIf="celda.marcado">🚩</span>
+  </div>
+  

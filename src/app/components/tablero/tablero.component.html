@@ -1,0 +1,16 @@
+<div class="tablero">
+    <div *ngFor="let fila of tablero; let i = index">
+      <div *ngFor="let celda of fila; let j = index">
+        <app-celda
+          [celda]="celda"
+          (click)="onCeldaClick(i, j)"
+          (contextmenu)="onCeldaRightClick($event, i, j)"
+        ></app-celda>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="isJuegoTerminado()" class="mensaje">
+    <p>¡Juego Terminado! Has encontrado una mina.</p>
+  </div>
+  

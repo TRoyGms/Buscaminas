@@ -1,0 +1,21 @@
+.celda {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.descubierto {
+  background-color: #e0e0e0;
+}
+
+.mina {
+  background-color: red;
+}
+
+.marcada {
+  background-color: yellow;
+}
